@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amanda Rose | Web Developer & Designer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+    <a class="navbar-brand" href="#"><img src="assets/AB.svg" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#css-creature-modal">CSS Creature</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#static-layout-modal">Static Layout</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#api-project-1-modal">API Project #1</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#api-project-2-modal">API Project #2</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#blue-badge">Blue Badge</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#red-badge">Red Badge</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- LANDING/HEADER SECTION -->
+
+  <div class="jumbotron bg-cover text-white parallax" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(assets/hero-bg.jpg)">
+    <div class="container">
+    <h1 class="display-4">Amanda Bouwers</h1>
+    <p class="lead">Web Designer & Developer</p>
+    <hr class="my-4">
+    <p class="intro">Are you looking for a reliable developer to partner with? If so, I'm your gal. I have years of experience in branding, marketing, design, and development. I'm an expert in time management.</p>
+    <a href="#about"><button type="button" class="btn btn-light btn-">Learn More</button></a>
+      </div>
+    </div>
+
+
+<!-- MODALS -->
+
+<!-- CSS Creature Modal -->
+<div class="modal fade" id="css-creature-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">CSS Creature</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+          <img src="assets/css_creature.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CSS Creature</h5>
+            <p class="card-text">The very first assignment at Eleven Fifty Academy was to build a creature of our choosing using HTML + CSS. Check it out!</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="https://arbouwers.github.io/css-creature/" target="blank" class="btn btn-dark">View Project</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Static Layout Modal -->
+<div class="modal fade" id="static-layout-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Static Layout</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+          <img src="assets/static_layout.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Static Layout</h5>
+            <p class="card-text">The objective of this assignment was to re-create an existing web page. I chose KAST because I enjoyed the animations and minimalistic style.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a target="blank" href="https://arbouwers.github.io/kast_recreation/" class="btn btn-dark">View Project</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- API Project #1 Modal-->
+<div class="modal fade" id="api-project-1-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">API Project #1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+          <img src="assets/Group 1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">API Project #1</h5>
+            <p class="card-text">I chose to use LoremPicsum for my first API Project. The user has the ability to view a gallery of images at the click of a button. The viewer can also search for an image of specific dimensions.</p>
+          </div>
+        </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="https://arbouwers.github.io/LoremPicsumAPI/gallery.html" target="blank" class="btn btn-dark">View Project</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- API Project #2 Modal -->
+<div class="modal fade" id="api-project-2-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">API Project #2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+          <img src="assets/pantone-chips.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">API Project #2</h5>
+            <p class="card-text">Not yet assigned.</p>
+          </div>
+        </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <a href="#" class="btn btn-dark">View Project</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Blue Badge Modal -->
+<div class="modal fade" id="blue-badge" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Blue Badge</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+          <img src="assets/blue_badge.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Blue Badge TBA</h5>
+            <p class="card-text">Not yet assigned.</p>
+          </div>
+        </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <a href="#" class="btn btn-dark">View Project</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Red Badge Modal -->
+<div class="modal fade" id="red-badge" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Red Badge</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+          <img src="assets/red_badge.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Red Badge TBA</h5>
+            <p class="card-text">Not yet assigned.</p>
+          </div>
+        </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <a href="#" class="btn btn-dark">View Project</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+    <!-- ABOUT SECTION -->
+
+<div id="about" class="container">
+  <div class="divider"></div>
+  <div class="row">
+    <div class="col-sm-4 d-flex flex-column about-text">
+      <!-- <div class="botanical"><img src="assets/graphic_element_97.png" width="30em" alt=""></div>  -->
+      <h4 class="wow slideInUp delay-2s">HI, I'M AMANDA ROSE!</h4>
+      <p>
+        I am based in Indianapolis and currently studying Web Development at Eleven Fifty Academy. I love using my creativity and problem solving skills to create amazing user experiences.
+      </p>
+      <p>
+        I believe in working consciously & from the heart and I'm passionate about collaborating with purpose-driven brands. My desire is to help you clearly communicate your message to your aligned audience via digital representation.
+      </p>
+        <!-- <p>
+          I believe that the process of translating your brand's values to visual design should be straightforward and easy to understand. By the end of our time together I want you to leave feeling empowered - with an online home that you're proud of!
+        </p> -->
+        <a href="#about"><button type="button" class="btn btn-dark btn-30">Get In Touch</button></a>
+    </div>
+    <div class="col-sm-8">
+      <img class="about-img" src="assets/About-min.jpg" alt="About Image" width="700">
+    </div>
+  </div>
+</div>
+
+  
+
+  <!-- PROJECTS SECTION -->  
+  <!-- Static Layout, Creature Assignment, API Project #1, API Project #2, Blue Badge TBA, Red Badge TBA -->
+
+  <div class="container" id="projects">
+    <div class="divider"></div>
+    <h3 class="wow slideInUp delay-2s">Most Recent Projects</h3>
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <img src="assets/css_creature.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CSS Creature</h5>
+            <p class="card-text">The very first assignment at Eleven Fifty Academy was to build a creature of our choosing using HTML + CSS. Check it out!</p>
+            <br>
+            <a href="https://arbouwers.github.io/css-creature/" target="blank" class="btn btn-dark">View Project</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="assets/Group 2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Static Layout</h5>
+            <p class="card-text">The objective of this assignment was to re-create an existing web page. I chose KAST because I enjoyed the animations and minimalistic style.</p>
+            <br>
+            <a target="blank" href="https://arbouwers.github.io/kast_recreation/" class="btn btn-dark">View Project</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="assets/Group 1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">API Project #1</h5>
+            <p class="card-text">I chose to use LoremPicsum for my first API Project. The user has the ability to view a gallery of images at the click of a button. The viewer can also search for an image of specific dimensions.</p>
+            <br>
+            <a href="https://arbouwers.github.io/LoremPicsumAPI/" target="blank" class="btn btn-dark">View Project</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <div class="card">
+          <img src="assets/pantone-chips.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">API Project #2</h5>
+            <p class="card-text">Not yet assigned.</p>
+            <br>
+            <br>
+            <a href="#" class="btn btn-dark">View Project</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="assets/blue_badge.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Blue Badge TBA</h5>
+            <p class="card-text">Not yet assigned.</p>
+            <br>
+            <br>
+            <a href="#" class="btn btn-dark">View Project</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="assets/red_badge.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Red Badge TBA</h5>
+            <p class="card-text">Not yet assigned.</p>
+            <br>
+            <br>
+            <a href="#" class="btn btn-dark">View Project</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- CONTACT SECTION -->
+
+  <!-- <div id="contact" class="container">
+    <div class="divider"></div>
+    <h3>Let's get in touch!</h3>
+        <form
+      action="https://formspree.io/f/meqplowp"
+      method="POST"
+    >
+      <label>
+        Your email:
+        <br>
+        <input type="text" name="_replyto">
+      </label>
+      <br>
+      <label>
+        Your message:
+        <br>
+        <textarea name="message"></textarea>
+      </label>
+    
+      <!-- your other form fields go here -->
+      <!-- <br>
+      <button type="submit" class="btn btn-dark">Send</button>
+    </form>
+  </div> -->
+
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="container">
+    <div id="contact" class="contact-form">
+      <h3>Let's get in touch!</h3>
+      <div class="icon-wrapper">
+        <a href="https://www.github.com">
+          <img src="assets/Github.svg" alt="Github" class="icons">
+        </a>
+        <a href="https://www.linkedin.com">
+          <img src="assets/LinkedIN.svg" alt="Linkedin" class="icons">
+        </a>
+        <a href="https://www.facebook.com">  <img src="assets/Facebook.svg" alt="FB" class="icons"></a>
+        <a href="https://www.instagram.com">
+          <img src="assets/Instagram.png" alt="Intagram" class="icons">         
+        </a>
+      </div>
+    </div>
+    <hr class="footer-hr">
+    <div class="row d-flex align-items-center">
+      <div class="col-sm-6">
+        <div class="link-wrapper">
+          <li class="active">
+            <a  href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li >
+            <a href="#about">About</a>
+          </li>
+          <li >
+            <a href="#projects">Projects</a>
+          </li>
+          <li >
+            <a href="#contact">Contact</a>
+          </li>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <form
+        action="https://formspree.io/f/meqplowp"
+        method="POST"
+        class="form"
+      >
+        <label>
+          Your email:
+          <br>
+          <input type="text" name="_replyto">
+        </label>
+        <br>
+        <label>
+          Your message:
+          <br>
+          <textarea name="message"></textarea>
+        </label>
+      
+        <!-- your other form fields go here -->
+        <br>
+        <button type="submit" class="btn btn-dark">Send</button>
+      </form>
+      </div>
+    </div>
+    <p class="copyright">2020 Portfolio by Amanda Bouwers</p>
+  </div>
+</footer>
+
+
+<script src="index.js"></script>
+ 
+</body>
+<script src="index.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
