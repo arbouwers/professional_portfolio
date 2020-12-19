@@ -31,6 +31,10 @@ hr {
   margin: 40px 2px 80px 2px;
 }
 
+.text-black {
+  color: black;
+}
+
 .container {
   padding: 70px 0;
 }
